@@ -45,180 +45,218 @@
         }
     #picture .white {
         color:#FFF;
-        }
+    }
+    .code {
+      display: block;
+      font-family: monospace;
+      white-space: pre;
+      margin: 1em 0;
+      font-size: 22px;
+      line-height: 26px;
+    }
 
 </style>
 </head>
 <body class="shower list hasGoogleVoiceExt" style="">
 
 	<header class="caption">
-		<h1>TPAC 2017 - Presentation Template</h1>
+		<h1>TPAC 2017 - WebAssembly</h1>
 		<p>W3C</p>
 	</header>
 
-	<section class="slide cover clearfix splash" id="1">
-            <h2 class="left">[Slide heading here]</h2>
-            <h2 class="right">[Your name here]</h2>
+	<section class="slide cover clearfix splash" id="title">
+            <h2 class="left">WebAssembly</h2>
+            <h2 class="right">Brad Nelson</h2>
             <figure>
                 <img src="./TPAC-2017/TPAC_cover_1280.jpg" alt="W3C TPAC 2017">
                 <!--<figcaption>If you need one</figcaption>-->
             </figure>
 	</section>
 
-	<section class="slide" id="2">
-		<h2>Slide title</h2>
+	<section class="slide" id="whatsit">
+		<h2>What is WebAssembly?</h2>
 		<ol>
-			<li>Item 1</li>
-			<li>Item 2</li>
-			<li>Item 3</li>
-			<li>Item 4</li>
-			<li>Item 5</li>
-			<li>Item 6</li>
-			<li>Item 7</li>
-			
-		</ol>
-		<p class="note">Add extra notes here</p>
-	</section>
-
-	<section class="slide" id="3">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="https://www.w3.org/2017/Talks/tpac-slides/tpac2017-shower/#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-
-	<section class="slide" id="4">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-
-	<section class="slide" id="5">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
+			<li class="next">Low-level code for the Web</li>
+      <li class="next">Binary format</li>
+      <li class="next">Embedded in JS (WebAssembly object)</li>
+			<li class="next">A compilation target for C/C++ and Rust</li>
 		</ol>
 	</section>
 
-	<section class="slide" id="6">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
+	<section class="slide" id="wheresit">
+		<h2>Where does it run?</h2>
+		<figure class="next">
+      <h3>Everywhere!</h3>
+      <img src="https://hacks.mozilla.org/files/2017/02/logo_party01-768x259.png"
+           alt="Chrome Firefox Edge and WebKit!">
+      <figcaption style="font-size: 14px">https://hacks.mozilla.org/2017/02/where-is-webassembly-now-and-whats-next/</figcapture>
+      <h3>Shipped in 4 major browser engines on desktop and mobile</h3>
 		</figure>
 	</section>
 
-	<section class="slide" id="7">
-		<h2>Code samples</h2>
-		<pre>			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
-
-	<section class="slide" id="8">
-		<h2>Even tables</h2>
-		<table>
-		<tbody><tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</tbody></table>
-		<p>It’s good to have information organized.</p>
-	</section>
-
-	<section class="slide cover" id="picture">
-		<h2 class="white">Pictures</h2>
-		<figure>
-			<img src="./TPAC-2017/picture.jpg" alt="Sample picture">
-			<!--<figcaption class="white">
-                If you need one
-			</figcaption>-->
-		</figure>
-	</section>
-
-	<section class="slide" id="10">
-		<h2 class="shout shrink">You&nbsp;can&nbsp;even shout&nbsp;this&nbsp;way</h2>
-	</section>
-
-	<section class="slide" id="11">
-		<h2>Inner navigation</h2>
+	<section class="slide" id="doeswhat">
+		<h2>What can it do?</h2>
 		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
+      <li class="next">High performance games (Epic Unreal, Unity)</li>
+		  <li class="next">Audio and Video codecs / 3D model compression</li>
+	    <li class="next">Google Earth</li>
+      <li class="next">Speech synthesis / recognition</li>
+      <li class="next">Media applications (Photoshop, After Effects, Maya, Blender, etc.)</li>
+      <li class="next">Bring existing C/C++ apps to the Web (Linux Stack, Emacs, Vim)</li>
+      <li class="next">Libraries for cryptography, computer vision, barcode reading</li>
+      <li class="next">Applications requiring reliable performance, blocking APIs, precise memory control</li>
 		</ol>
 	</section>
 
-	<section class="slide grid" id="12">
-		<h2>All nicely aligned to grid</h2>
-	</section>
-    
-    <section class="slide" id="13">
-		<h2>Add as many slides as you like</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="https://www.w3.org/2017/Talks/tpac-slides/tpac2017-shower/#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+	<section class="slide" id="wasm_logo">
+		<h2>How does it work?</h2>
+		<figure>
+      <img width="800" height="auto"
+           src="images/wasm_machine.png"
+           alt="WebAssembly Machine">
+		</figure>
 	</section>
 
-	<section class="slide" id="see-more">
-		<p><a href="https://github.com/shower/shower">Shower template courtesy Vadim Makeev</a></p>
+	<section class="slide" id="wasm_logo">
+		<h2>How does that work for C++?</h2>
+    <br/>
+		<figure>
+      <img width="800" height="auto"
+           src="images/wasm_cpp.png"
+           alt="WebAssembly C++ Mapping">
+		</figure>
 	</section>
-    
-    <section class="slide cover splash" id="15">
+
+	<section class="slide" id="sample_wasm">
+		<h2>WebAssembly Encoding</h2>
+    <div class="code">
+int <b>factorial</b>(int n) {                Binary     Text
+  if (n == 0)                         20 00    | get_local 0
+                                      42 00    | i64.const 0
+                                      51       | i64.eq
+                                      04 7e    | if i64
+    return 1;                         42 01    |   i64.const 1
+  else                                05       | else
+    return n * factorial(n - 1);      20 00    |   get_local 0
+                                      20 00    |   get_local 0
+                                      42 01    |   i64.const 1
+                                      7d       |   i64.sub
+                                      10 <b>00</b>    |   call <b>0</b>
+                                      7e       |   i64.mul
+}                                     0b       | end
+    </div>
+	</section>
+
+	<section class="slide" id="sample_wasm">
+		<h2>JavaScript & Web APIs</h2>
+    <div class="code">
+function baz(x) { ... }
+var mem = new WebAssembly.Memory({initial: 10, maximum: 100});
+WebAssembly.instantiateStreaming(
+    fetch('https://xyz.com/foo.wasm'),
+    {memory: mem, imports: {bar: baz}},
+ function(result) {
+   result.myMethod(123);
+ });
+    </div>
+	</section>
+
+	<section class="slide" id="collaboration">
+		<h2>Community Group Success Story</h2>
+		<ol>
+      <li class="next">Founded April 2015</li>
+			<li class="next">891 participants</li>
+			<li class="next">4 browser participation</li>
+		</ol>
+	</section>
+
+	<section class="slide" id="wasm_logo">
+		<h2>Let the Internet Pick your Logo!</h2>
+		<center>
+		<figure>
+      <img
+           src="https://raw.githubusercontent.com/carlosbaraza/web-assembly-logo/master/dist/logo/web-assembly-logo-512px.png"
+          alt="WebAssembly Logo">
+		</figure>
+		</center>
+	</section>
+
+	<section class="slide" id="tools">
+		<h2>Active Process</h2>
+		<ol>
+      <li class="next">Bi-weekly Video Community Group Meetings</li>
+      <li class="next">Quarterly Face-to-Face CG 2-3 Day Meetings</li>
+      <li class="next">Working Group Meetings Every 2-4 Weeks</li>
+      <li class="next">Spec and Test Suite nearing fPWD</li>
+      <li class="next">Robustly public, open, CG focused</li>
+      <li class="next">Phased cooperative process between CG + WG</li>
+		</ol>
+	</section>
+
+	<section class="slide" id="related_apis">
+		<h2>Related APIs</h2>
+		<ol>
+      <li class="next">SharedArrayBuffer</li>
+			<li class="next">WebAudio Worklets</li>
+			<li class="next">Offscreen Canvas</li>
+			<li class="next">Cache API</li>
+			<li class="next">IndexedDB</li>
+			<li class="next">Foreign Fetch (or something else?)</li>
+		</ol>
+	</section>
+
+	<section class="slide" id="proposals">
+		<h2>Active Proposals</h2>
+		<ol>
+      <li class="next">Build Memory Operations</li>
+			<li class="next">GC (Managed Objects)</li>
+			<li class="next">Multiple Value</li>
+			<li class="next">Non-Trapping Float-to-Int Conversion</li>
+			<li class="next">Exception Handling</li>
+			<li class="next">Tail Call</li>
+			<li class="next">SIMD</li>
+			<li class="next">Decompression Layer 1</li>
+		</ol>
+	</section>
+
+	<section class="slide" id="proposals">
+		<h2>Proposals on the Way</h2>
+		<ol>
+      <li class="next">Memory Specialization</li>
+			<li class="next">JS/DOM Bindings</li>
+			<li class="next">Extensions for Content Security Policy</li>
+			<li class="next">More Memory</li>
+			<li class="next">Memory Mapping</li>
+		</ol>
+	</section>
+
+	<section class="slide" id="tools">
+		<h2>Tools and Ecosystem</h2>
+		<ol>
+      <li class="next">Common Test Suite</li>
+      <li class="next">Binaryen</li>
+      <li class="next">Less formal "Tool-Conventions"</li>
+      <li class="next">Common Workloads</li>
+      <li class="next">Separate compilation (lld support)</li>
+      <li class="next">Faster VTables</li>
+      <li class="next">Shared Continuous Build</li>
+      <li class="next">Shared Docs + Website</li>
+		</ol>
+	</section>
+
+  <section class="slide cover splash" id="15">
+		<h2 class="left">Questions?</h2>
+		<h2 class="right">Questions?</h2>
 		<figure>
 			<img src="./TPAC-2017/TPAC_cover_1280.jpg" alt="W3C TPAC 2017">
-            <!--<figcaption>If you need one</figcaption>-->
-        </figure>
+       <!--<figcaption>If you need one</figcaption>-->
+    </figure>
 	</section>
-
-	<footer>
-		<!-- Add a footer here -->
-	</footer>
 
 	<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="-7" aria-valuetext="Slideshow Progress: -7%"></div>
 
 	<script src="./TPAC-2017/shower.min.js"></script>
 	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
-
 
 
 <section role="region" aria-live="assertive" aria-relevant="additions" aria-label="Slide Content: Auto-updating" class="region"></section></body></html>
